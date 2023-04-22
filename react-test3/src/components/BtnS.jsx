@@ -15,11 +15,12 @@ const SmallSection = styled.section`
   gap: 20px;
 `
 
-const SmallBtn = styled.button`
+export const SmallBtn = styled.button`
 border: none;
 background-color: ${(props) => {
   return props.color ? '#55efc4' : '#fab1a0'
 }};
+
 padding: 20px;
 font-weight: 900;
 border-radius: 10px;
