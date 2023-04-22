@@ -19,7 +19,7 @@ const LargeSection = styled.section`
   gap: 10px;
 `
 
-const LargeBtn = styled.button`
+export const LargeBtn = styled.button`
 border: 3px solid ${(props) => {
     return  props.color === '#55efc4' ? '#55efc4' : '#fab1a0'
   }};
