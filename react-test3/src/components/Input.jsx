@@ -24,38 +24,40 @@ function Input(props) {
   }
 
   return (
-    <section>
+    <>
       <h1>Input</h1>
-      <div>
-        <Form>
-          <label htmlFor="name">
-            이름 &nbsp;
-            <UserInput
-              type="text"
-              id="name"
-              value={name}
-              onChange={nameChangeHandler}
-            />
-          </label>
-          <label htmlFor="price">
-            가격 &nbsp;
-            <UserInput
-              type="text"
-              id="price"
-              value={price}
-              onChange={priceChangeHandler}
-            />
-          </label>
+      <section>
+        <div>
+          <Form>
+            <label htmlFor="name">
+              이름 &nbsp;
+              <UserInput
+                type="text"
+                id="name"
+                value={name}
+                onChange={nameChangeHandler}
+              />
+            </label>
+            <label htmlFor="price">
+              가격 &nbsp;
+              <UserInput
+                type="text"
+                id="price"
+                value={price}
+                onChange={priceChangeHandler}
+              />
+            </label>
 
-          <SmallBtn
-            onClick={saveBtnClickHandler}
-            color={props.color}
-          >
-            저장
-          </SmallBtn>
-        </Form>
-      </div>
-    </section>
+            <SmallBtn
+              onClick={saveBtnClickHandler}
+              color={props.color}
+            >
+              저장
+            </SmallBtn>
+          </Form>
+        </div>
+      </section>
+    </>
   )
 }
 
